@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roll Result</title>
+</head>
+<body>
+<h1>Roll Result</h1>
+<p>You guessed: <span th:text="${guess}">Guess</span></p>
+<p>The roll was: <span th:text="${roll}">Roll</span></p>
+<p><strong><span th:text="${match ? 'You win!' : 'Sorry, try again.'}"></span></strong></p>
+</body>
+</html>
