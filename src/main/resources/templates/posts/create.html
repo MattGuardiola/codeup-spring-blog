@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head th:replace="partials :: head"></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
 <body>
     <form action="#" th:action="@{/posts/create}" th:object="${blogpost}" method="post">
         <label for="title">Title:</label>
@@ -12,17 +15,5 @@
         <br>
     <p><input type="submit" value="Submit" /></p>
     </form>
-
-    <div class="input-group">
-        <span class="input-group-text">First and last name</span>
-        <input type="text" aria-label="First name" class="form-control">
-        <input type="text" aria-label="Last name" class="form-control">
-    </div>
-    <div class="input-group">
-        <span class="input-group-text">First and last name</span>
-        <input type="text" aria-label="First name" class="form-control">
-        <input type="text" aria-label="Last name" class="form-control">
-    </div>
 </body>
 </html>
-
